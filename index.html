@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimalist Aim Trainer</title>
+  </head>
+  <body>
+    <div id="overlay">
+      <aside id="menu">
+        <header>
+          <h1>Minimalist<span>Aim Trainer</span></h1>
+          <p id="menu-status"></p>
+        </header>
+
+        <button id="btn-play" class="primary">Jugar</button>
+        <button id="btn-restart" class="ghost" hidden>Reiniciar</button>
+
+        <section id="results" hidden>
+          <h3>Resultado</h3>
+          <div class="score" id="results-score"></div>
+          <div class="best" id="results-best"></div>
+          <dl id="results-list"></dl>
+        </section>
+
+        <div id="menu-body"></div>
+
+        <footer>
+          <kbd>ESPACIO</kbd> jugar / continuar · <kbd>ESC</kbd> pausa · <kbd>R</kbd> reiniciar<br />
+          Consejo: pulsa <kbd>F11</kbd> para pantalla completa
+        </footer>
+      </aside>
+    </div>
+
+    <div id="crosshair">
+      <i class="ch-t"></i><i class="ch-b"></i><i class="ch-l"></i><i class="ch-r"></i><i class="ch-dot"></i>
+    </div>
+
+    <div id="hud-bar"></div>
+    <div id="hud">
+      <span id="hud-info"></span>
+      <span id="hud-time">60</span>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
